@@ -1,0 +1,120 @@
+/* Variables exist in the root element */
+:root {
+  --hero-text-color: whitesmoke;
+  --hero-title-bg-color: #1d3557;
+  --hero-desc-bg-color: #457b9d;
+  --text-color: #1d3557;
+  --section-color: #f1faee;
+  --business-card-color: #a8dadc;
+  --business-card-shadow-color: #1d3557;
+}
+
+body {
+  text-align: center;
+  margin: 0px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  margin: 0px auto;
+}
+
+#hero {
+  background: url("images/test-background.jpeg") center / cover no-repeat;
+  height: 343px;
+  text-shadow: 0px 0px 3px rgb(10, 10, 10);
+}
+
+.empty-space {
+  height: 100px;
+}
+
+#title,
+#title-desc {
+  color: var(--hero-text-color);
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+#title {
+  background: var(--hero-title-bg-color);
+  font-size: 32px;
+  width: 225px;
+}
+
+#title-desc {
+  margin: 40px auto;
+  font-size: 18.72px;
+  width: 412px;
+  background: var(--hero-desc-bg-color);
+}
+
+#info {
+  background: linear-gradient(var(--section-color), rgb(255, 255, 232));
+}
+
+.section {
+  margin: 0px;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  font-size: 24px;
+  padding: 39px 0px 30px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-section {
+  width: 198px;
+  height: 226px;
+}
+
+.sub-section-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sub-section-img:hover {
+  width: 150px;
+  height: 150px;
+}
+
+#linkedin-url {
+  display: inline-block; /* Make URL only the width of the business card */
+  color: inherit; /* Inherit the same color as the other text in the body */
+  text-decoration: none; /* Remove the underline to links */
+}
+
+#business-card {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  background: var(--business-card-color);
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0px 6px var(--business-card-shadow-color);
+}
+
+#business-card:hover {
+  scale: 120%;
+}
+
+#profile-pic {
+  margin: 23px 7px 23px 13px;
+  width: 180px;
+  object-fit: contain;
+  border-radius: inherit;
+}
+
+#business-quote {
+  font-style: italic;
+  font-size: 16px;
+}
